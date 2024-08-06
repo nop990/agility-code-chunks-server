@@ -11,12 +11,7 @@ async function formatCode(code, language) {
     console.log("Formatting code:", code, language);
     try {
         let parser = language;
-        let plugins = [typescript, babel, estree, html, markdown, postcss, yaml];
-
-        if (language === 'java') {
-            // plugins.push(javaPlugin);
-        }
-
+        
         code = await prettier.format(code, {
             organizeImportsSkipDestructiveCodeActions: true,
             parser: parser,
