@@ -1,12 +1,10 @@
 // server.js
-
 const express = require('express');
 const cors = require('cors');
-const format = require('./format.js');
+const format = require('../format.js');
 const app = express();
-const port = 3000;
 
-app.use(cors())
+app.use(cors());
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -34,7 +32,4 @@ app.post('/api/format', (req, res) => {
         });
 });
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
+module.exports = app;
