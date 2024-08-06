@@ -10,8 +10,6 @@
   "author": "nop990",
   "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
     "prettier": "^3.3.3",
     "prettier-plugin-java": "^2.6.4"
   }
