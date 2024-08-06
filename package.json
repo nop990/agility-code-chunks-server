@@ -1,0 +1,18 @@
+{
+  "name": "agility-code-chunks-server",
+  "version": "1.0.0",
+  "description": "API for web extension to call and return formatted code",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "nop990",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-java": "^2.6.4"
+  }
+}
