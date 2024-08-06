@@ -1,7 +1,7 @@
 // server.js
 const express = require('express');
 const cors = require('cors');
-const format = require('../format.js');
+const format = require('./format.js');
 const app = express();
 
 app.use(cors());
